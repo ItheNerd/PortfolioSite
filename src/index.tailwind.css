@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.root,
+#root,
+#docs-root {
+  --primary: #061224;
+  --secondary: #a0aec0;
+  --accent: #718096;
+  --background: #fff;
+  --main: #0d0106;
+  --header: #2d3748;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(45, 73, 110, 0.41);
+  border-radius: 10rem;
+  padding: 4%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #050d18;
+}
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+.navBtn:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: var(--black);
+  color: #fff;
+  transition: transform 0.5s ease-out;
+  opacity: 0;
+}
