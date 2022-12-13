@@ -20,7 +20,7 @@ function Home() {
 				<div className="ml-auto">
 					<button
 						type="button"
-						className="my-2 flex items-center rounded-lg border-2 border-blue-400 px-6 py-3 text-blue-400 duration-200 hover:bg-blue-900">
+						className="nav_btn my-2 flex items-center rounded-lg border-2 border-blue-400 px-6 py-3 text-blue-400 hover:text-primary">
 						View Projects
 					</button>
 				</div>

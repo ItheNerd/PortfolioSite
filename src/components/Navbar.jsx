@@ -40,7 +40,7 @@ const Navbar = () => {
 									smooth={true}
 									duration={500}
 									offset={-50}
-									className="relative inline-block overflow-hidden rounded-full py-1 px-2 before:absolute before:left-3 before:right-0 before:top-0 before:bottom-0 before:-z-10 before:m-auto before:w-[1px] before:bg-transparent before:duration-700 before:content-[''] hover:before:scale-x-[120] hover:before:bg-blue-500 hover:before:bg-opacity-50">
+									className="nav_btn">
 									<span>{items}</span>
 								</Link>
 							</li>
@@ -48,11 +48,7 @@ const Navbar = () => {
 					}
 					return (
 						<li key={index} className="flex items-center">
-							<Link
-								to={items}
-								smooth={true}
-								duration={500}
-								className="relative inline-block overflow-hidden rounded-full py-1 px-2 before:absolute before:left-3 before:right-0 before:top-0 before:bottom-0 before:-z-10 before:m-auto before:w-[1px] before:bg-transparent before:duration-700 before:content-[''] hover:before:scale-x-[120] hover:before:bg-blue-500 hover:before:bg-opacity-50">
+							<Link to={items} smooth={true} duration={500} className="nav_btn">
 								{items}
 							</Link>
 						</li>
